@@ -1,6 +1,6 @@
 import { MenuInicioPage } from '../page/MenuInicioPage';
 
-describe('Logout', () => {
+describe('menu Início', () => {
 
   const menuInicioPage = new MenuInicioPage(); // ✅ cria instância
 

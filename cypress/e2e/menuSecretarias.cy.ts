@@ -1,6 +1,6 @@
 import { MenuSecretariasPage } from '../page/MenuSecretariasPage';
 
-describe('menus', () => {
+describe('menus Secretarias', () => {
 
   const menuSecretariasPage = new MenuSecretariasPage(); // ✅ cria instância
 

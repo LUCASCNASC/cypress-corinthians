@@ -1,6 +1,6 @@
 import { MenuACidadePage } from '../page/MenuACidadePage';
 
-describe('menus', () => {
+describe('menus A Cidade', () => {
 
   const menuACidadePage = new MenuACidadePage(); // ✅ cria instância
 
