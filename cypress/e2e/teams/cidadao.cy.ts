@@ -1,4 +1,4 @@
-import { CidadaoPage } from '../../page/acesso_rapido/CidadaoPage';
+import { CidadaoPage } from '../../page/acesso_rapido/TeamsPage';
 
 describe('acesso rápido Cidadão', () => {
 
