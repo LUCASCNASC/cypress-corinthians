@@ -1,14 +1,18 @@
-import { CidadaoPage } from '../page/LoginPage';
+//import { CidadaoPage } from '../page/LoginPage';
 
-describe('acesso rápido Cidadão', () => {
+describe('login', () => {
 
-  const cidadaoPage = new CidadaoPage(); // ✅ cria instância
+  //const cidadaoPage = new CidadaoPage(); // ✅ cria instância
 
   beforeEach(() => {
     cy.visit('/');
+    cy.closeNewsletter()
+    
   });
 
-  it('Farmácia Móvel', () => {
+  it('login sucess', () => {
+
+    cy.get('.hidden.justify-end > #loginNavigation > .gap-4 > :nth-child(2)').click()
     
   });
 

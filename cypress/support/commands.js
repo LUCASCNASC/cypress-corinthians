@@ -1,25 +1,9 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+//commando to wait appear newsletter and close.
+Cypress.Commands.add('closeNewsletter', () => {
+
+    cy.intercept('GET','**/out/v1/s-prd/ch-01-prd-s-v2/dash-ch-01-prd-s-hd/**').as('api_video_stream');
+    cy.wait('@api_video_stream', { timeout: 40000 });
+
+    cy.get('.absolute > .inline-flex').click()
+    
+})
