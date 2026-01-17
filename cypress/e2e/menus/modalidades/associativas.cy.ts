@@ -2,11 +2,11 @@ import { CompetitivasPage } from '../../../page/menus/modalidades/CompetitivasPa
 import { MenuModalidadesPage } from '../../../page/menus/modalidades/MenuModalidadesPage';
 
 describe('menu Modalidades -> Associativas', () => {
-
   const competitivasPage = new CompetitivasPage(); // ✅ cria instância
   const menuModalidadesPage = new MenuModalidadesPage(); // ✅ cria instância
 
   beforeEach(() => {
+    
     cy.visit('/');
     menuModalidadesPage.clickModalidades();
     menuModalidadesPage.validateAssociativas();
